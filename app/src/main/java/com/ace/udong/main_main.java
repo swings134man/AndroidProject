@@ -73,9 +73,9 @@ MainDB mainDB;
         String mId = "test1";
 
         if (cId != null){
-            btnWrite.setVisibility(View.VISIBLE);
+            btnWrite.setVisibility(View.VISIBLE); // 사업자회원 로그인시 버튼 활성화
         }else {
-            btnWrite.setVisibility(View.INVISIBLE);
+            btnWrite.setVisibility(View.INVISIBLE); // 사업자회원 비로그인시 버튼 비활성화
         }
         // 글작성 버튼
         btnWrite.setOnClickListener(new View.OnClickListener() {
@@ -100,7 +100,7 @@ MainDB mainDB;
         // 1번 레이아웃
         LinearLayout layout1 = findViewById(R.id.home); // 레이아웃 객체
         View listmain = View.inflate(main_main.this, R.layout.listmain, null); // 인플레이트
-        layout1.addView(listmain); //레이아웃에 외부레이아웃 삽입
+        layout1.addView(listmain); //레이아웃에 외부레이아웃(리스트) 추가
         // main 그리드뷰
         GridView gridview = findViewById(R.id.maingrid1); //그리드뷰
         // 어댑터

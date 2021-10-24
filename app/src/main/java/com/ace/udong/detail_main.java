@@ -201,9 +201,7 @@ public class detail_main extends AppCompatActivity implements AdapterView.OnItem
 
         }//switch
     }
-
     @Override
     public void onNothingSelected(AdapterView<?> parent) {
     }
-
 }//class

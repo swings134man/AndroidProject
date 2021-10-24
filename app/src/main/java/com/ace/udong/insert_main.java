@@ -34,7 +34,9 @@ public class insert_main extends AppCompatActivity {
         btnWriteBT = findViewById(R.id.btnWriteBT);
 
         Intent intent = getIntent();
+        // 로그인한 ID 값 저장.
         String writer1 = intent.getStringExtra("cId");
+
         mainDB = new MainDB(this);
 
 
